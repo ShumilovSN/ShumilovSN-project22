@@ -394,12 +394,19 @@
     text-align: center;
 }
 
-.feature__line {
+.hor-line {
     width: 130px;
-    height: 2px;
-    margin: 0 auto;
+    height: 2px;    
     background-color: rgba(255, 45, 45, 1);
     border: none;
+}
+
+.hor-line_center {
+    margin: 0 auto;
+}
+
+.hor-line_left {
+    margin: 0;
 }
 
 .filter {
@@ -446,4 +453,64 @@
     width: 297px;
     object-fit: cover;
     object-position: 0% 50%;
+}
+
+/* Team */
+.team {
+    width: 1249px;
+    margin: 0 auto;
+    padding: 65px 0 53px;
+    text-align: left;
+}
+
+.team__header {
+    margin-bottom: 67px;
+}
+
+.team__heading {
+    font-family: 'Open Sans';
+    font-size: 41.9876px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.team__about {
+    font-family: 'Open Sans';
+    font-size: 15.9953px;
+    width: 450px;
+    margin: 0;
+    margin-bottom: 39px;
+}
+
+.team__members {
+    display: grid;
+}
+
+.team__lead-photo {
+    object-position: bottom;
+    object-fit: contain;
+    background-color: #ff3f40;
+}
+
+.team__lead-social {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.team__lead-link {
+    color: #000;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.team__other-photo {
+    background-color: #ff3f40;
 }
