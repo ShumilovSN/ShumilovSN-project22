@@ -258,7 +258,13 @@ button {
 
 .action-link_red-transp {
     background-color: #ff2d2d;
-    color: #fff;
+    color: #fff;    
+}
+
+.action-link_red-transp-lm {
+    background-color: #ffffff;
+    color: #ff3f40;
+    border: 2px solid #ff3f40;
 }
 
 .intro__video {
