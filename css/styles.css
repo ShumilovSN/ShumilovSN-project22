@@ -733,14 +733,19 @@ button {
 
 /* Get in touch */
 .feedback {
-    max-width: 1249px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 104px 0 107px;
 }
 
 .feedback__header {
-    max-width: 752px;
+    max-width: 1249px;
+    margin: 0 auto;
     margin-bottom: 77px;
+}
+
+.feedback__inner {
+    max-width: 752px;
 }
 
 .feedback__heading {
@@ -762,8 +767,31 @@ button {
 
 .feedback__body {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 731px 107px 411px 1fr;
+    grid-template-rows: auto;
+}
+
+/* .feedback__body::before {
+    content: '';
+    flex: 1 1 auto;
+} */
+
+.feedback__body::after {
+    content: '';
+    /* flex: 1 1 auto; */
+    background-color: #2d2d2d;
+    grid-column: 5 / 6;
+}
+
+.feedback__box {
+    flex: 1 1 auto;
+}
+
+.feedback__box_right {
+    background-color: #2d2d2d;
 }
 
 .feedback__form {
@@ -771,6 +799,8 @@ button {
     display: flex;
     flex-wrap: wrap;    
     justify-content: space-between;
+    margin-right: 107px;
+    grid-column: 2 / 3;
 }
 
 .feedback__form input::placeholder, .feedback__form textarea::placeholder {
@@ -833,7 +863,8 @@ button {
 
 .feedback__contacts {
     color: #fff;
-    background-color: rgba(45, 45, 45, 1)
+    background-color: rgba(45, 45, 45, 1);
+    grid-column: 4 / 5;
 }
 
 .contacts {
@@ -872,6 +903,40 @@ button {
     color: #fff;
     margin: 0;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1248px) {
+    .feedback__body {
+        grid-template-columns: 1fr auto 1fr;
+        row-gap: 107px;
+    }
+    .feedback__body::after {
+        content: none;
+    }
+    .feedback__form {
+        width: 100%;
+        grid-column: 2 / 3;
+        margin-right: initial;
+    }
+    .feedback__name {
+        width: 100%;
+        margin-right: initial;
+    }
+    .feedback__email {
+        width: 100%;        
+    }
+    .feedback__textarea {
+        width: 100%;        
+    }
+    .feedback__button {
+        width: 100%;        
+    }
+    .feedback__contacts {
+        grid-column: 2 / 3;
+    }
+    .contacts {
+        width: auto;
+    }
 }
 
 /* Footer */
