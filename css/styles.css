@@ -515,6 +515,7 @@ button {
     width: 297px;
     object-fit: cover;
     object-position: 0% 50%;
+    flex: 1 1;
 }
 
 /* Team */
