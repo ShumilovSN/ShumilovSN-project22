@@ -116,7 +116,8 @@ button {
 
 .page__inner {
     display: block;
-    width: 100%;    
+    width: 100%;
+    box-sizing: border-box;    
 }
 
 .page__inner_intro {
@@ -812,8 +813,14 @@ button {
     /* justify-content: space-between; */
     flex-wrap: wrap;
     display: grid;
-    grid-template-columns: 1fr 731px 107px 411px 1fr;
+    grid-template-columns: 1fr 731px minmax(auto, 107px) 411px 1fr;
     grid-template-rows: auto;
+}
+
+@media (max-width: 1010px) {
+    .feedback__body {
+        padding: 0 1vw;
+    }
 }
 
 /* .feedback__body::before {
