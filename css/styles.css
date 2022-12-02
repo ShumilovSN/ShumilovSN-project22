@@ -544,7 +544,7 @@ button {
 }
 
 .feature__about {
-    width: 537px;
+    /* width: 537px; */
     margin: 0 auto;
     margin-bottom: 34.5px;
     font-family: 'Open Sans', sans-serif;
@@ -577,7 +577,7 @@ button {
 .filter__list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     display: flex;
     flex-wrap: wrap;
     gap: 57px;
@@ -641,7 +641,7 @@ button {
 .team__about {
     font-family: 'Open Sans', sans-serif;
     font-size: 15.9953px;
-    width: 450px;
+    /* width: 450px; */
     margin: 0;
     margin-bottom: 39px;
 }
